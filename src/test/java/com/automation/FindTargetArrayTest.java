@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.automation.FindTarget;
+import com.automation.FindTargetArray;
 
 /**
  * Created by nnarmala on 1/29/17.
  */
-public class FindTargetTest {
+public class FindTargetArrayTest {
     @Test(dataProvider = "arrayslistparams")
     public void findTargetArrayInArraysListTest(List<Object[]> objArraysList, List<Object[]> expectedArraysList, int target) {
         List<Object[]> targetArrayList = new ArrayList<Object[]>();
