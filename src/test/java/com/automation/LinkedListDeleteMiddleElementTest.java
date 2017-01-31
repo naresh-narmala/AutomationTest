@@ -9,7 +9,7 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by nnarmala on 1/29/17.
  */
-public class LinkedListDeleteElementTest {
+public class LinkedListDeleteMiddleElementTest {
     @Test(dataProvider = "linkedlistparams")
     public void removeMiddleElementTest(LinkedList List, Object element) {
         SoftAssert softAssert = new SoftAssert();
