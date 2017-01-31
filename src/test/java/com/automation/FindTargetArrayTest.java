@@ -13,7 +13,7 @@ import com.automation.FindTarget;
  * Created by nnarmala on 1/29/17.
  */
 public class FindTargetTest {
-    @Test(dataProvider = "arrayparams")
+    @Test(dataProvider = "arrayslistparams")
     public void testMethod(List<Object[]> objArraysList, List<Object[]> expectedArraysList, int target) {
         List<Object[]> targetArrayList = new ArrayList<Object[]>();
         try {
@@ -27,7 +27,7 @@ public class FindTargetTest {
     }
 
     @DataProvider(name = "arrayparams")
-    public static Object[][] arrayParams() {
+    public static Object[][] arrayslistparams() {
 
         //TestCase1
         List<Object[]> objArraysList1 = new ArrayList<Object[]>();

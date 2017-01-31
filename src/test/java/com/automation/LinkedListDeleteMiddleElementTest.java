@@ -10,12 +10,12 @@ import org.testng.asserts.SoftAssert;
  * Created by nnarmala on 1/29/17.
  */
 public class LinkedListDeleteElementTest {
-    @Test(dataProvider = "listparams")
-    public void testMethod(LinkedList List, Object element) {
+    @Test(dataProvider = "linkedlistparams")
+    public void MiddleElementDeleteTest(LinkedList List, Object element) {
         SoftAssert softAssert = new SoftAssert();
         int beforeDeleteListSize = List.size();
         System.out.println("List before Delete: \t" + List);
-        Object removedElement = List.removeMiddle();
+        Object removedElement = List.removeMiddleElement();
         int afterDeleteListSize = List.size();
         softAssert.assertEquals(element, removedElement, "middle element is removed");
         softAssert.assertEquals(afterDeleteListSize, (beforeDeleteListSize - 1), "size not valid");
@@ -27,8 +27,8 @@ public class LinkedListDeleteElementTest {
         softAssert.assertAll();
     }
 
-    @DataProvider(name = "listparams")
-    public static Object[][] listProvider() {
+    @DataProvider(name = "linkedlistparams")
+    public static Object[][] linkedListProvider() {
 
         //TestCase with integer with odd number of elements
         LinkedList List1 = new LinkedList();
