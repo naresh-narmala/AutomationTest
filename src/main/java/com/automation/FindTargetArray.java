@@ -12,12 +12,12 @@ import java.util.ArrayList;
  * @version 1.0
  * @since   2017-01-30
  */
-public class FindTarget {
+public class FindTargetArray {
     private static int counter;
     private Node head;
 
     // Default constructor
-    public FindTarget() {
+    public FindTargetArray() {
 
     }
 
