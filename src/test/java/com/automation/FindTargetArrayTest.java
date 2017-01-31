@@ -17,7 +17,7 @@ public class FindTargetArrayTest {
     public void findTargetArrayInArraysListTest(List<Object[]> objArraysList, List<Object[]> expectedArraysList, int target) {
         List<Object[]> targetArrayList = new ArrayList<Object[]>();
         try {
-            targetArrayList = FindTarget.findTargetArrayInArraysList(objArraysList, target);
+            targetArrayList = FindTargetArray.findTargetArrayInArraysList(objArraysList, target);
         } catch (NullPointerException e) {
             Assert.fail("InputArray is Null");
         }
