@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
  */
 public class LinkedListDeleteElementTest {
     @Test(dataProvider = "linkedlistparams")
-    public void MiddleElementDeleteTest(LinkedList List, Object element) {
+    public void removeMiddleElementTest(LinkedList List, Object element) {
         SoftAssert softAssert = new SoftAssert();
         int beforeDeleteListSize = List.size();
         System.out.println("List before Delete: \t" + List);
