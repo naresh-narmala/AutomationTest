@@ -96,7 +96,7 @@ public class LinkedList {
 
 
     // removes the element at the specified position in this list.
-    public Object removeMiddle() {
+    public Object removeMiddleElement() {
         Node slow = head;
         Node fast = head;
         Node prev = null;
