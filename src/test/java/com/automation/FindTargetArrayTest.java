@@ -14,7 +14,7 @@ import com.automation.FindTarget;
  */
 public class FindTargetTest {
     @Test(dataProvider = "arrayslistparams")
-    public void testMethod(List<Object[]> objArraysList, List<Object[]> expectedArraysList, int target) {
+    public void findTargetArrayInArraysListTest(List<Object[]> objArraysList, List<Object[]> expectedArraysList, int target) {
         List<Object[]> targetArrayList = new ArrayList<Object[]>();
         try {
             targetArrayList = FindTarget.findTargetArrayInArraysList(objArraysList, target);
@@ -26,7 +26,7 @@ public class FindTargetTest {
 
     }
 
-    @DataProvider(name = "arrayparams")
+    @DataProvider(name = "arrayslistparams")
     public static Object[][] arrayslistparams() {
 
         //TestCase1
